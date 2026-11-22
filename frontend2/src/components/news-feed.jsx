@@ -172,6 +172,8 @@ import { useState } from "react";
 import { Bar } from "react-chartjs-2";
 import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend } from 'chart.js';
 import { motion } from "framer-motion";
+import loadingGif from "../assets/images/loading1.gif";
+
 
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
 
@@ -262,7 +264,7 @@ export default function NewsFeed() {
       {/* Loading State */}
       {loading && (
         <div className="text-center flex justify-center items-center h-screen">
-          <img src="src/assets/images/loading1.gif" alt="Loading..." className="w-24 h-24" />
+          <img src={loadingGif} alt="Loading..." className="w-24 h-24" />
         </div>
       )}
 

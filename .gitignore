@@ -1,5 +1,21 @@
+# Environment variables
 .env
+.env.*
+!.env.example
 
+# Python
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+# Frontend
 node_modules/
-
 dist/
+
+# Local databases and model cache
+chroma_db/
+.cache/
+
+# Logs
+*.log

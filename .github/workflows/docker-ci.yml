@@ -1,0 +1,40 @@
+
+name: Dristikon AI - Docker CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  docker-build:
+    name: Build and Validate Backend
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Build backend Docker image
+        uses: docker/build-push-action@v6
+        with:
+          context: ./backend_old
+          file: ./backend_old/Dockerfile
+          push: false
+          load: true
+          tags: dristikon-backend:ci
+
+      - name: Verify Flask application imports
+        run: |
+          docker run --rm \
+            --entrypoint python \
+            dristikon-backend:ci \
+            -c "from app import create_app; app = create_app(); print('Flask CI validation passed')"

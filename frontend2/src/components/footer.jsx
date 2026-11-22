@@ -28,10 +28,8 @@ export default function Footer() {
           <div>
             <h4 className="text-lg font-semibold text-gray-800 mb-4">Owner's - CodeHamster</h4>
             <ul className="space-y-2">
-              <li><a href="#" className="text-gray-800 hover:text-[#0096FF]">Aniket Lokhande</a></li>
+              <li><a href="#" className="text-gray-800 hover:text-[#0096FF]">Darshan Wagh</a></li>
               <li><a href="#" className="text-gray-800 hover:text-[#0096FF]">Ankit Dhadiwal</a></li>
-              <li><a href="#" className="text-gray-800 hover:text-[#0096FF]">Sahil Deshkar</a></li>
-              <li><a href="#" className="text-gray-800 hover:text-[#0096FF]">Sukrut Rahane</a></li>
             </ul>
           </div>
 
@@ -53,16 +51,13 @@ export default function Footer() {
               </a>
             </div> */}
             <div className="flex space-x-6">
-            <a href="https://x.com/whatever_ankit" target="_blank" rel="noopener noreferrer" className="text-gray-800 hover:text-[#0096FF] hover:scale-110 transition-transform duration-300">
-            <Twitter className="w-6 h-6" />
-            </a>
-            <a href="https://www.linkedin.com/in/sahil-deshkar-829242240/" target="_blank" rel="noopener noreferrer" className="text-gray-800 hover:text-[#0096FF] hover:scale-110 transition-transform duration-300">
+            <a href="https://www.linkedin.com/in/darshan-wagh-1a1411203/" target="_blank" rel="noopener noreferrer" className="text-gray-800 hover:text-[#0096FF] hover:scale-110 transition-transform duration-300">
             <Linkedin className="w-6 h-6" />
             </a>
-            <a href="https://github.com/ankitdhadiwal/Sentiment_Analysis" target="_blank" rel="noopener noreferrer" className="text-gray-800 hover:text-[#0096FF] hover:scale-110 transition-transform duration-300">
+            <a href="https://github.com/Dashcloud-ML/sentiment_analysis" target="_blank" rel="noopener noreferrer" className="text-gray-800 hover:text-[#0096FF] hover:scale-110 transition-transform duration-300">
             <Github className="w-6 h-6" />
             </a>
-            <a href="mailto:ankit.dhadiwal.885@gmail.com" className="text-gray-800 hover:text-[#0096FF] hover:scale-110 transition-transform duration-300">
+            <a href="mailto:wdarshan523@gmail.com" className="text-gray-800 hover:text-[#0096FF] hover:scale-110 transition-transform duration-300">
             <Mail className="w-6 h-6" />
             </a>
             </div>
